@@ -256,8 +256,131 @@ body {
     border-radius: 40px;
     cursor: pointer;
 }
-@media (max-width:400px){
-    #pets{
-      flex-wrap: wrap;
+
+@media (max-width: 1024px) {
+    .main-container {
+        margin-left: 320px;
     }
-  }
+
+    .topbar .navbar ul li {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .main-container {
+        margin-left: 270px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topbar .navbar {
+        margin-top: 10px;
+    }
+
+    .topbar .navbar ul li {
+        margin: 0 5px;
+        width: auto;
+    }
+
+    .topbar .navbar button {
+        padding: 10px 20px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .spotify-playlists {
+        padding: 15px 20px;
+    }
+
+    .spotify-playlists h2 {
+        font-size: 20px;
+    }
+
+    .spotify-playlists .list {
+        gap: 10px;
+    }
+
+    .spotify-playlists .list .item {
+        min-width: 120px;
+        width: 140px;
+    }
+
+    .preview {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .preview h6, .preview p {
+        font-size: 12px;
+    }
+
+    .preview button {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-container {
+        margin-left: 220px;
+    }
+
+    .topbar {
+        padding: 10px 20px;
+    }
+
+    .topbar .prev-next-buttons button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .topbar .navbar ul li {
+        margin: 0 3px;
+        width: auto;
+    }
+
+    .topbar .navbar button {
+        padding: 8px 15px;
+        margin-top: 8px;
+    }
+
+    .spotify-playlists {
+        padding: 10px 15px;
+    }
+
+    .spotify-playlists h2 {
+        font-size: 18px;
+    }
+
+    .spotify-playlists .list .item {
+        min-width: 100px;
+        width: 120px;
+    }
+
+    .preview {
+        padding: 8px 15px;
+    }
+
+    .preview h6, .preview p {
+        font-size: 10px;
+    }
+
+    .preview button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
